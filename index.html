@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/assets/icons/Vector.svg" type="image/x-icon">
+
+    <script type="module" src="/assets/js/script.js" defer></script>
+    <title>Lista de Compras</title>
+</head>
+<body>
+    <header>
+        <a>
+            <img src="/assets/icons/logo.svg" alt="logo">
+        </a> 
+    </header>
+        <div  class="container">
+            <a href="#">&lt;- Voltar</a>
+            <h1>Compras da semana</h1>
+        </div>
+    <main>
+        <form id="itens-list-form">
+            <div class="input-wrapper">
+                <input type="text" placeholder="Adicione um novo item" id="product">
+                <button type="submit">Adicionar item</button>
+            </div>
+
+            <div id="list" role="list">
+            </div>
+        </form>
+            <div id="warning-message" class="warning hidden">
+                <div class="text-container">
+                    <img src="./assets/icons/warning-circle.svg" alt="">
+                    <p>O item foi removido da lista</p>
+                </div>
+                <button type="button" id="close-warning"> 
+                    <img src="/assets/icons/cancel-02.svg" alt="">
+                </button>
+            </div>
+    </main>
+</body>
+</html>
