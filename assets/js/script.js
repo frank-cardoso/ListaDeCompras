@@ -42,8 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
             });
 
             if (checkboxes.length > 0) {
-                alert('Nenhum item selecinado para remoção.')
-                return;
+                showWarning();
             }
         })
 
